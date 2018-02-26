@@ -306,7 +306,7 @@ func goName(sqlName string) string {
 // The default type is string.
 func goType(sqlType string) string {
 	switch sqlType {
-	case "smallint", "smallserial":
+	case "smallint", "smallserial", "tinyint":
 		return "int16"
 	case "integer", "serial":
 		return "int32"
